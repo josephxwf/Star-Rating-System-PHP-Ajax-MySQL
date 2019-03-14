@@ -26,10 +26,10 @@
 		<div class="col-sm-4">
 		<h4 style="margin-top:10px;"><?php echo $product["name"]; ?></h4>
 <?php
-		$averageRating = round($average, 0);
+		//$averageRating = round($average, 0);
 		for ($i = 1; $i <= 5; $i++) {
 			$ratingClass = "star-grey";
-			if($i <= $averageRating) {
+			if($i <= $average) {
 				$ratingClass = "star-highlight";
 			}
 
@@ -55,10 +55,10 @@
 
 			<!--	<h2 class="bold padding-bottom-7"><?php printf('%.1f', $average); ?> <small>/ 5</small></h2> -->
 				<?php
-				$averageRating = round($average, 0);
+				//$averageRating = round($average, 0);
 				for ($i = 1; $i <= 5; $i++) {
 					$ratingClass = "star-grey";
-					if($i <= $averageRating) {
+					if($i <= $average) {
 						$ratingClass = "star-highlight";
 					}
 				?>

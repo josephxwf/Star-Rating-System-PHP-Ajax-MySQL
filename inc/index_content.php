@@ -14,16 +14,19 @@
 	?>
 	<div class="row">
 		<div class="col-sm-2" style="width:150px">
-			<img class="product_image" src="image/<?php echo $product["image"]; ?>" style="width:100px;height:200px;padding-top:10px;">
+			<img class="product_image" src="image/<?php echo $product["image"]; ?>" style="width:200px;height:200px;padding:20px;">
 		</div>
 		<div class="col-sm-4">
 		<h4 style="margin-top:10px;"><a href="product_detail.php?product_id=<?php echo $product["id"]; ?>"><?php echo $product["name"]; ?></a></h4>
 
 		<?php
-				$averageRating = round($average, 0);
+
+
+
+				//$averageRating = round($average, 0);
 				for ($i = 1; $i <= 5; $i++) {
 					$ratingClass = "star-grey";
-					if($i <= $averageRating) {
+					if($i <= $average) {
 						$ratingClass = "star-highlight";
 					}
 
