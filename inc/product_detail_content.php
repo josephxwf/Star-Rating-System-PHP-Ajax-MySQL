@@ -21,7 +21,7 @@
 	?>
 	<div class="row">
 		<div class="col-sm-2" style="width:150px">
-			<img class="product_image" src="image/<?php echo $product["image"]; ?>" style="width:100px;height:200px;padding-top:10px;">
+			<img class="product_image" src="image/<?php echo $product["image"]; ?>" style="width:200px;height:200px;padding:20px  25px;">
 		</div>
 		<div class="col-sm-4">
 		<h4 style="margin-top:10px;"><?php echo $product["name"]; ?></h4>
