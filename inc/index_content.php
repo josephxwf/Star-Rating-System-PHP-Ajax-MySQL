@@ -37,7 +37,12 @@
 				echo $count . ' Reviews';
 			?>
 	<!--	<div><span class="average"><?php printf('%.1f', $average); ?> <small>/ 5</small></span> <span class="rating-reviews"><a href="show_rating.php?product_id=<?php echo $product["id"]; ?>">Rating & Reviews</a></span></div>-->
-		<?php echo $product["description"]; ?>
+	  <?php
+		  echo '<br>';
+		  echo '<div class = "product_price">$'.$product["price"].'</div>';
+		  echo $product["description"];
+
+		 ?>
 		</div>
 	</div>
 	<?php } ?>
