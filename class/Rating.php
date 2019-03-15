@@ -8,7 +8,7 @@ class Rating{
 	private $productTable = 'product';
     private $productRatingTable = 'product_rating';
 	private $dbConnect = false;
-	private $settingClass = ''; // value can be set to 'loginRequired' or '' ,customer need to be a registered buyer to rate the product
+	private $settingClass = 'loginRequired'; // value can be set to 'loginRequired' or '' ,customer need to be a registered buyer to rate the product
 
 
 
