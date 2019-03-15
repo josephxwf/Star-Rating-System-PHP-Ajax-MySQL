@@ -54,9 +54,10 @@
 	<br>
 	<div >
 		<div class="row">
+			<!--
 			<div class="col-sm-3">
 
-			<!--	<h2 class="bold padding-bottom-7"><?php printf('%.1f', $average); ?> <small>/ 5</small></h2> -->
+
 				<?php
 				//$averageRating = round($average, 0);
 				for ($i = 1; $i <= 5; $i++) {
@@ -71,7 +72,7 @@
 				<?php } ?>
 				<?php echo $count. ' Reviews'; ?>
 			</div>
-
+-->
 			<div class="col-sm-3">
 
 			</div>

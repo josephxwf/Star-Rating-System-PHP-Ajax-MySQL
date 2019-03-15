@@ -114,6 +114,9 @@
 }
 
 
+#loggedPanel{
+  padding: 20px;
+}
 
 .loginmodal {
   text-align: center;

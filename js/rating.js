@@ -10,8 +10,8 @@ $(function() {
 					$('#loginModal').modal('hide');
 					$('#loggedPanel').removeClass('hidden');
 					$('#loggedUser').text(response.username);
-				
-					$( "#rateProduct" ).removeClass('loginRequired');
+
+				//	$( "#rateProduct" ).removeClass('loginRequired');
 
 
 					$("#ratingDetails").show();
