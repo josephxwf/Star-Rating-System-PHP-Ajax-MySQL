@@ -73,7 +73,7 @@ class Rating{
 			SELECT r.id, r.product_id, r.user_id, u.username, u.avatar, r.rating_score, r.title, r.comment, r.reviewer,r.created_at, r.updated_at
 			FROM ".$this->productRatingTable." as r
 			LEFT JOIN ".$this->productUsersTable." as u ON (r.user_id = u.id)
-			WHERE r.product_id = '".$product_id."'";
+			WHERE r.product_id = '".$product_id."' ORDER BY r.created_at DESC";
 		return  $this->getData($sqlQuery);
 	}
 
