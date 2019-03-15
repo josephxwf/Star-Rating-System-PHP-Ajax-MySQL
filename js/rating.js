@@ -10,9 +10,11 @@ $(function() {
 					$('#loginModal').modal('hide');
 					$('#loggedPanel').removeClass('hidden');
 					$('#loggedUser').text(response.username);
-					$( "#rateProduct" ).addClass('login');
-					// rating section
-					$("#ratingDetails").hide();
+				
+					$( "#rateProduct" ).removeClass('loginRequired');
+
+
+					$("#ratingDetails").show();
 					$("#ratingSection").show();
 				} else {
 					$('#loginError').show();

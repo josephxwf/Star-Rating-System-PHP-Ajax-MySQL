@@ -10,7 +10,7 @@
       <?php
       $userName = '';
       $show = '';
-      if(!empty($_SESSION['user_id']) && $_SESSION['user_id']) {
+      if(!empty($_SESSION['userid']) && $_SESSION['userid']) {
       	$userName =  $_SESSION['username'];
       } else {
       	$show = 'hidden';
@@ -30,14 +30,16 @@
       </li>
     </ul>
 
-    <div id="loggedPanel" class="<?php echo $show; ?>">
-      Logged in <span id="loggedUser" class="logged-user"><?php echo $userName; ?></span>
-      <a href="action.php?action=logout">Logout</a>
-    </div>
+
 
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+
+    <div id="loggedPanel" class="<?php echo $show; ?>">
+      <span id="loggedUser" class="logged-user"><?php echo $userName; ?></span>
+      <a href="action.php?action=logout">Logout</a>
+    </div>
   </div>
 </nav>

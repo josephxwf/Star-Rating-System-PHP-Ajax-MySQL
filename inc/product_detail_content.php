@@ -3,7 +3,7 @@
 
 
 <div class="container">
-	<h2>Star Rating Review System</h2>
+	<h2>Product Detail Page</h2>
 	<?php
 
 	include 'class/Rating.php';
@@ -52,7 +52,7 @@
 
 
 	<br>
-	<div id="ratingDetails">
+	<div >
 		<div class="row">
 			<div class="col-sm-3">
 
@@ -77,7 +77,7 @@
 			</div>
 
 			<div class="col-sm-3">
-				<button type="button" id="rateProduct" class="btn btn-secondary btn-sm <?php echo $settingClass; ?>">Rate This Product</button>
+				<button type="button" id="rateProduct" class="btn btn-secondary btn-sm <?php if(empty($_SESSION['userid'])){echo $settingClass;}  ?>">Rate This Product</button>
 			</div>
 		</div>
 		<div class="row">
@@ -128,7 +128,7 @@
 				<?php echo $count . ' Reviews'; ?>
 
 				<hr/>
-				<div class="">
+				<div id="ratingDetails">
 				<?php
 				$productRating = $rating->getProductRating($_GET['product_id']);
 				foreach($productRating as $rating){
@@ -213,5 +213,7 @@
     </div>
   </div>
 </div>
+
+
 
 </div>
